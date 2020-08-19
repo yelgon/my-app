@@ -1,13 +1,125 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #111;
+}
+li {
+  padding: 5px;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1px 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.banner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+}
+.iframe-background {
+  pointer-events: none;
+}
+.banner .textBox {
+  position: relative;
+  max-width: 550px;
+  z-index: 2;
+}
+.banner .textBox h2 {
+  color: #fff;
+  font-size: 3em;
+}
+
+.banner .textBox p {
+  color: #fff;
+  font-size: 1.1em;
+  margin: 5px 0 25px;
+}
+.skill-box {
+  display: flex;
+}
+.skill-box ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style: none;
+}
+.skill-box li {
+  margin: 0 5px;
+}
+
+.banner .videoBox {
+  position: relative;
+  background-color: #fff;
+  margin-left: 40px;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+}
+.banner .videoBox iframe {
+  opacity: 1;
+}
+.banner .sci {
+  position: absolute;
+  bottom: 20px;
+  letter-spacing: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .sci li {
+  list-style: none;
+}
+.banner .sci li a {
+  display: inline-block;
+}
+.banner .sci li a img {
+  height: 50px;
+  width: 50px;
+  transform: scale(0.5);
+  filter: invert(1);
+}
+
+@media (max-width: 991px) {
+  .banner {
+    padding: 150px 50px 0;
+    flex-direction: column;
+  }
+  .banner:before {
+    display: none;
+  }
+  .banner .textBox {
+    max-width: 100%;
+  }
+  .banner .textBox h2 {
+    font-size: 2.5em;
+  }
+  .banner .videoBox {
+    width: 100%;
+    height: 250px;
+    margin: 40px 0 100px;
+  }
+  .banner .sci {
+    left: 50px;
+  }
 }
