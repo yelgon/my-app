@@ -130,9 +130,3 @@ li {
     grid-template-columns: auto auto;
   }
 }
-
-@media (max-width: 414px) {
-  div {
-    font-size: 0.8em;
-  }
-}
