@@ -6,16 +6,16 @@ import { Link } from "react-router-dom";
 const Button = styled.button`
   width: 30px;
   height: 30px;
-  position: absolute;
-  bottom: 20px;
   border-radius: 10px;
   box-shadow: 1px 1px #d6d9d3;
-  :hover {
+  &:hover {
     transform: scale(1.2);
   }
+  margin-top: 20px;
 `;
 
 const Wrapper = styled.div`
+  position: relative;
   color: white;
   margin: 100px;
   position: absolute;
@@ -43,12 +43,11 @@ function AboutMe() {
               .start();
           }}
         />
-      </Wrapper>
-      <div style={{ width: "100%", textAlign: "center" }}>
         <Link to="/groupProject">
           <Button />
         </Link>
-      </div>
+      </Wrapper>
+      <div></div>
     </div>
   );
 }

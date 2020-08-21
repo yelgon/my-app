@@ -122,4 +122,17 @@ li {
   .banner .sci {
     left: 50px;
   }
+  .skill-box {
+    flex-direction: column;
+  }
+  .skill-box ul {
+    margin-top: 20px;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 414px) {
+  div {
+    font-size: 0.8em;
+  }
 }

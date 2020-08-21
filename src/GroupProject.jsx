@@ -14,6 +14,7 @@ function GroupProject(props) {
   return (
     <div className="banner">
       <iframe
+        title="marketplace"
         className="iframe-background"
         src={props.project.iframeUrl}
         allow="autoplay"
@@ -39,6 +40,7 @@ function GroupProject(props) {
       </div>
       <div className="videoBox">
         <iframe
+          title="marketplace"
           src={props.project.iframeUrl}
           allow="autoplay"
           allowFullScreen
@@ -47,17 +49,17 @@ function GroupProject(props) {
       <ul className="sci">
         <li>
           <a href="https://www.facebook.com/gon.kim.355">
-            <img src="facebook.png" />
+            <img src="facebook.png" alt="facebook logo" />
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/yangoh-kim-92ba53153/">
-            <img src="linkedIn.png" />
+            <img src="linkedIn.png" alt="linkedin logo" />
           </a>
         </li>
         <li>
           <a href="https://github.com/yelgon">
-            <img src="gitHub.png" />
+            <img src="gitHub.png" alt="gitHub logo" />
           </a>
         </li>
       </ul>

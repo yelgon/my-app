@@ -72,7 +72,7 @@ function NavBar() {
       <div className="logo">Full-stack Developer</div>
 
       <div className="toggle">
-        <img src="toggle.png" />
+        <img src="toggle.png" alt="horizontal lines" />
 
         <MenuBox>
           <Link to="/" style={{ color: "inherit", textDecoration: "inherit" }}>

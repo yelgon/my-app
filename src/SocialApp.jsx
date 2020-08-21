@@ -14,6 +14,7 @@ function SocialApp(props) {
   return (
     <div className="banner">
       <iframe
+        title="tennis-buddy-finder"
         className="iframe-background"
         src={props.project.iframeUrl}
         allow="autoplay"
@@ -39,6 +40,7 @@ function SocialApp(props) {
       </div>
       <div className="videoBox">
         <iframe
+          title="tennis-buddy-finder"
           src={props.project.iframeUrl}
           allow="autoplay"
           allowFullScreen
@@ -47,17 +49,17 @@ function SocialApp(props) {
       <ul className="sci">
         <li>
           <a href="https://www.facebook.com/gon.kim.355">
-            <img src="facebook.png" />
+            <img src="facebook.png" alt="facebook logo" />
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/yangoh-kim-92ba53153/">
-            <img src="linkedIn.png" />
+            <img src="linkedIn.png" alt="linkedin logo" />
           </a>
         </li>
         <li>
           <a href="https://github.com/yelgon">
-            <img src="gitHub.png" />
+            <img src="gitHub.png" alt="gitHub logo" />
           </a>
         </li>
       </ul>
